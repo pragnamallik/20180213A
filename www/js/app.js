@@ -7,8 +7,7 @@ angular.module('myapp', ['ionic'])
 .controller('mycontroller',function($scope,$http){
   $scope.TakePhoto=function() {
     navigator.camera.getPicture(function(imageData){
-        alert("success");
-        
+        alert("success");        
     },function(message){
       alert("message");
       console.log(message);
