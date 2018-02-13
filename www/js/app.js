@@ -6,12 +6,11 @@
 angular.module('myapp', ['ionic'])
 .controller('mycontroller',function($scope,$http){
   $scope.TakePhoto=function() {
-    alert("imageData");
     navigator.camera.getPicture(function(imageData){
-        alert("imageData");
+        alert("success");
         
     },function(message){
-      alert(message);
+      alert("message");
       console.log(message);
     },
     { quality: 50 });
